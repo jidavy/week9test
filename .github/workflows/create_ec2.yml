@@ -43,12 +43,12 @@ jobs:
 
       - name: Terraform plan 
         working-directory: terraform
-        run: terraform plan -var-file="dev.tfvars"
+        run: terraform plan
 
       - name: Terraform apply 
         working-directory: terraform
-        run: terraform apply -var-file="dev.tfvars" -auto-approve
+        run: terraform apply -auto-approve
 
       - name: Terraform Destroy
         working-directory: terraform
-        run: terraform destroy -var-file="dev.tfvars" -auto-approve
+        run: terraform destroy -auto-approve
