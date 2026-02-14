@@ -28,6 +28,7 @@ provider "aws" {
 resource "aws_security_group" "jigzy_sg" {
   name        = "multi-node-security-group"
   description = "Security group for Java, Nginx, and Ansible nodes"
+  vpc_id      = var.project_vpc
 
   # 1. SSH (Port 22) - Required for all 3 nodes so YOU can log in
   ingress {
