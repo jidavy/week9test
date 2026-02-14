@@ -48,7 +48,3 @@ jobs:
       - name: Terraform apply 
         working-directory: terraform
         run: terraform apply -auto-approve
-
-      - name: Terraform Destroy
-        working-directory: terraform
-        run: terraform destroy -auto-approve
