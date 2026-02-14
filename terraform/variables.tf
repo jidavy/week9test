@@ -18,5 +18,5 @@ variable "instance_type" {
 variable "key_name" {
   description = "The name of the SSH key pair created in AWS"
   type        = string
-  default     = "jenkkins-keys" # Change this to your actual AWS Key Pair name
+  default     = "jenkins-keys" # Change this to your actual AWS Key Pair name
 }
