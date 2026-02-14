@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "ami_id" {
   description = "The Amazon Linux 2023 AMI ID"
   type        = string
-  default     = "ami-0c38b837e2b6d452a"
+  default     = "ami-080ecf65f4d838a6e"
 }
 
 variable "instance_type" {
@@ -18,5 +18,5 @@ variable "instance_type" {
 variable "key_name" {
   description = "The name of the SSH key pair created in AWS"
   type        = string
-  default     = "my-terraform-key" # Change this to your actual AWS Key Pair name
+  default     = "jenkkins-keys" # Change this to your actual AWS Key Pair name
 }
