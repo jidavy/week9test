@@ -76,7 +76,7 @@ resource "aws_security_group" "jigzy_sg" {
 
 # 1. Java Node
 resource "aws_instance" "java_node" {
-  ami                    = "ami-0c38b837e2b6d452a"
+  ami                    = "ami-080ecf65f4d838a6e"
   instance_type          = "t3.micro"
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.jigzy_sg.id] # Attached here
@@ -85,7 +85,7 @@ resource "aws_instance" "java_node" {
 
 # 2. Nginx Node (Updated with User Data)
 resource "aws_instance" "nginx_node" {
-  ami                    = "ami-0c38b837e2b6d452a"
+  ami                    = "ami-080ecf65f4d838a6e"
   instance_type          = "t3.micro"
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.jigzy_sg.id]
